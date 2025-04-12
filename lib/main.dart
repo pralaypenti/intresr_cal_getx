@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:intresr_cal_getx/intrest_cal.dart';
+import 'package:intresr_cal_getx/love_cal.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      home: IntrestCalView(),
+      home: LoveCal(),
     );
   }
 }
