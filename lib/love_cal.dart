@@ -90,8 +90,8 @@ class _LoveCalState extends State<LoveCal> {
 
             SizedBox(height: 15),
             Obx(() {
-             return Text(
-                 controller.result.value,
+              return Text(
+                controller.result.value,
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
