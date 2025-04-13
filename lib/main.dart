@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:intresr_cal_getx/aleart_diloage.dart';
 import 'package:intresr_cal_getx/intrest_cal.dart';
 import 'package:intresr_cal_getx/login_screen.dart';
 import 'package:intresr_cal_getx/love_cal.dart';
@@ -101,6 +102,24 @@ class _ButtonScreenState extends State<ButtonScreen> {
                 ),
                 child: Text(
                   'Login Page Button',
+                  style: TextStyle(color: Colors.pinkAccent),
+                ),
+              ),
+              
+
+                SizedBox(height: 25),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => AleartDiloageScreen()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  textStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                ),
+                child: Text(
+                  'Aleart Button',
                   style: TextStyle(color: Colors.pinkAccent),
                 ),
               ),
