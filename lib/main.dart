@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:intresr_cal_getx/aditional_oprator_view.dart';
 import 'package:intresr_cal_getx/aleart_diloage.dart';
 import 'package:intresr_cal_getx/intrest_cal.dart';
 import 'package:intresr_cal_getx/login_screen.dart';
@@ -48,7 +49,10 @@ class _ButtonScreenState extends State<ButtonScreen> {
                   );
                 },
                 style: ElevatedButton.styleFrom(
-                  textStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  textStyle: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 child: Text(
                   'Calculate Love',
@@ -64,7 +68,10 @@ class _ButtonScreenState extends State<ButtonScreen> {
                   );
                 },
                 style: ElevatedButton.styleFrom(
-                  textStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  textStyle: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 child: Text(
                   'Intrest Cal Button',
@@ -80,7 +87,10 @@ class _ButtonScreenState extends State<ButtonScreen> {
                   );
                 },
                 style: ElevatedButton.styleFrom(
-                  textStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  textStyle: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 child: Text(
                   'Shared Preference Button',
@@ -88,8 +98,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
                 ),
               ),
 
-
-                SizedBox(height: 25),
+              SizedBox(height: 25),
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -98,28 +107,57 @@ class _ButtonScreenState extends State<ButtonScreen> {
                   );
                 },
                 style: ElevatedButton.styleFrom(
-                  textStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  textStyle: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 child: Text(
                   'Login Page Button',
                   style: TextStyle(color: Colors.pinkAccent),
                 ),
               ),
-              
 
-                SizedBox(height: 25),
+              SizedBox(height: 25),
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => AleartDiloageScreen()),
+                    MaterialPageRoute(
+                      builder: (context) => AleartDiloageScreen(),
+                    ),
                   );
                 },
                 style: ElevatedButton.styleFrom(
-                  textStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  textStyle: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 child: Text(
                   'Aleart Button',
+                  style: TextStyle(color: Colors.pinkAccent),
+                ),
+              ),
+              SizedBox(height: 25),
+
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => AditionalOparator(),
+                    ),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  textStyle: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                child: Text(
+                  'Additional  Button',
                   style: TextStyle(color: Colors.pinkAccent),
                 ),
               ),
