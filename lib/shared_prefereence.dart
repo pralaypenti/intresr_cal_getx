@@ -22,6 +22,7 @@ class SharedController extends GetxController {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString('name', nameTextController.text);
     saveName.value = nameTextController.text;
+    nameTextController.clear();
   }
 }
 
@@ -50,7 +51,6 @@ class SharedPreference extends StatelessWidget {
             SizedBox(height: 25),
             ElevatedButton(
               onPressed: () {
-                // Close keyboard before saving
                 FocusScope.of(context).unfocus();
                 controller.saveNameToPrefs();
               },

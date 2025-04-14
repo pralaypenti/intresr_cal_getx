@@ -35,133 +35,135 @@ class _ButtonScreenState extends State<ButtonScreen> {
         title: Text('Button Screen'),
         backgroundColor: Colors.yellowAccent,
       ),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(15),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => LoveCal()),
-                  );
-                },
-                style: ElevatedButton.styleFrom(
-                  textStyle: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                child: Text(
-                  'Calculate Love',
-                  style: TextStyle(color: Colors.pinkAccent),
-                ),
-              ),
-              SizedBox(height: 25),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => IntrestCalView()),
-                  );
-                },
-                style: ElevatedButton.styleFrom(
-                  textStyle: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                child: Text(
-                  'Intrest Cal Button',
-                  style: TextStyle(color: Colors.pinkAccent),
-                ),
-              ),
-              SizedBox(height: 25),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => SharedPreference()),
-                  );
-                },
-                style: ElevatedButton.styleFrom(
-                  textStyle: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                child: Text(
-                  'Shared Preference Button',
-                  style: TextStyle(color: Colors.pinkAccent),
-                ),
-              ),
-
-              SizedBox(height: 25),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => LoginScreenPage()),
-                  );
-                },
-                style: ElevatedButton.styleFrom(
-                  textStyle: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                child: Text(
-                  'Login Page Button',
-                  style: TextStyle(color: Colors.pinkAccent),
-                ),
-              ),
-
-              SizedBox(height: 25),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => AleartDiloageScreen(),
+      body: SingleChildScrollView(
+        child: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(15),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => LoveCal()),
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(
+                    textStyle: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
                     ),
-                  );
-                },
-                style: ElevatedButton.styleFrom(
-                  textStyle: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
+                  ),
+                  child: Text(
+                    'Calculate Love',
+                    style: TextStyle(color: Colors.pinkAccent),
                   ),
                 ),
-                child: Text(
-                  'Aleart Button',
-                  style: TextStyle(color: Colors.pinkAccent),
-                ),
-              ),
-              SizedBox(height: 25),
-
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => AditionalOparator(),
+                SizedBox(height: 25),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => IntrestCalView()),
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(
+                    textStyle: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
                     ),
-                  );
-                },
-                style: ElevatedButton.styleFrom(
-                  textStyle: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
+                  ),
+                  child: Text(
+                    'Intrest Cal Button',
+                    style: TextStyle(color: Colors.pinkAccent),
                   ),
                 ),
-                child: Text(
-                  'Additional  Button',
-                  style: TextStyle(color: Colors.pinkAccent),
+                SizedBox(height: 25),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SharedPreference()),
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(
+                    textStyle: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  child: Text(
+                    'Shared Preference Button',
+                    style: TextStyle(color: Colors.pinkAccent),
+                  ),
                 ),
-              ),
-            ],
+        
+                SizedBox(height: 25),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => LoginScreenPage()),
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(
+                    textStyle: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  child: Text(
+                    'Login Page Button',
+                    style: TextStyle(color: Colors.pinkAccent),
+                  ),
+                ),
+        
+                SizedBox(height: 25),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => AleartDiloageScreen(),
+                      ),
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(
+                    textStyle: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  child: Text(
+                    'Aleart Button',
+                    style: TextStyle(color: Colors.pinkAccent),
+                  ),
+                ),
+                SizedBox(height: 25),
+        
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => AditionalOparator(),
+                      ),
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(
+                    textStyle: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  child: Text(
+                    'Additional  Button',
+                    style: TextStyle(color: Colors.pinkAccent),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
