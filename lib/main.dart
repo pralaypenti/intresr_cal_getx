@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:intresr_cal_getx/aditional_oprator_view.dart';
 import 'package:intresr_cal_getx/aleart_diloage.dart';
+import 'package:intresr_cal_getx/auto_mess_reply.dart';
 import 'package:intresr_cal_getx/intrest_cal.dart';
 import 'package:intresr_cal_getx/login_screen.dart';
 import 'package:intresr_cal_getx/love_cal.dart';
@@ -84,7 +85,9 @@ class _ButtonScreenState extends State<ButtonScreen> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SharedPreference()),
+                      MaterialPageRoute(
+                        builder: (context) => SharedPreference(),
+                      ),
                     );
                   },
                   style: ElevatedButton.styleFrom(
@@ -98,13 +101,15 @@ class _ButtonScreenState extends State<ButtonScreen> {
                     style: TextStyle(color: Colors.pinkAccent),
                   ),
                 ),
-        
+
                 SizedBox(height: 25),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => LoginScreenPage()),
+                      MaterialPageRoute(
+                        builder: (context) => LoginScreenPage(),
+                      ),
                     );
                   },
                   style: ElevatedButton.styleFrom(
@@ -118,7 +123,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
                     style: TextStyle(color: Colors.pinkAccent),
                   ),
                 ),
-        
+
                 SizedBox(height: 25),
                 ElevatedButton(
                   onPressed: () {
@@ -141,7 +146,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
                   ),
                 ),
                 SizedBox(height: 25),
-        
+
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(
@@ -159,6 +164,27 @@ class _ButtonScreenState extends State<ButtonScreen> {
                   ),
                   child: Text(
                     'Additional  Button',
+                    style: TextStyle(color: Colors.pinkAccent),
+                  ),
+                ),
+
+                SizedBox(height: 25),
+
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ChatScreen()),
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(
+                    textStyle: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  child: Text(
+                    'Button',
                     style: TextStyle(color: Colors.pinkAccent),
                   ),
                 ),
